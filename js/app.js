@@ -30,7 +30,7 @@ var isValidCard = function(cardNumber) {
   for (var i = 0; i < reverseArray.length; i++) {
     //console.log(reverseArray[i+1]);
     if ((i + 1) % 2 === 0) {
-      console.log(reverseArray[i])
+      //console.log(reverseArray[i])
       // Se coloca 1 porque el indice empieza en 0 y %2 para ver si es par
       reverseArray[i] = reverseArray[i] * 2; // Se multiplica por 2 los números pares
       if (reverseArray[i] >= 10) {
