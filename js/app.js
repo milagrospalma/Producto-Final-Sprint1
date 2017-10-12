@@ -1,3 +1,8 @@
+//Muestra una ventana emergente solicitando el ingreso de datos
+var card = prompt('Ingrese su número de tarjeta');
+//Invocando la función
+isValidCard(card);
+
 // Es preferible primero realizar las validaciones para que no se ejecute la lógica antes de que se valide.
 var isValidCard = function(cardNumber) {
   //undefined para consola y null para interfaz
@@ -50,6 +55,3 @@ var containletters = function(text) {
   }
   return false;
 };
-
-var card = prompt('Ingrese su número de tarjeta');
-isValidCard(card);
