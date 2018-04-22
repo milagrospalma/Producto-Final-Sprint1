@@ -1,15 +1,16 @@
 # Tarjeta de Crédito Válida
-#### Objetivo
-Crear una web que solicite el número de una tarjeta de crédito y confirme su validez basándose en el algoritmo de Luhn.
-#### Diagrama de Flujo
-El siguiente diagrama ilustra las operaciones y la secuencia en la que se deben realizar para llevar a cabo la solución del producto final.
 
+## Objetivo
+Crear una web que solicite el número de una tarjeta de crédito y confirme su validez, basándose en el algoritmo de Luhn.
+
+## Diagrama de Flujo
+El siguiente diagrama ilustra las operaciones y la secuencia en la que se deben realizar para llevar a cabo la solución del producto final.
 
 ![Diagrama de Flujo](assets/docs/diagrama.png)
 
-#### Pseudocódigo
+## Pseudocódigo
 Representamos la solución de uns algoritmo de manera detallada y lo más parecida posible al lenguaje que posteriormente se utilizará para la codificación del mismo.
-~~~
+~~~js
 Proceso TarjetadeCreditoValida
 Ingreso de datos por medio de un prompt.
 creamos una función isvalidcard con las siguientes condiciones:
