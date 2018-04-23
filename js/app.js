@@ -1,18 +1,18 @@
+console.log("4035994034884135");
 var card = prompt('Ingrese su número de tarjeta');
-isValidCard(card);
 
 var isValidCard = function(cardNumber) {
-  //undefined para consola y null para interfaz
+  // undefined para consola y null para interfaz
   if (cardNumber === undefined || cardNumber === null) {
     alert('¡Hasta pronto!');
     return false;
   }
   if (containletters(cardNumber)) {
-    alert('Número de tarjeta no puede contener letras.');
+    alert('El número de tarjeta no puede contener letras.');
     return false;
   }
-  if (cardNumber.length === 0) {
-    alert('No puede ingresar un dato vacio.');
+  if (cardNumber.length === 0 || cardNumber.trim() === "") {
+    alert('No ingresó ningún dato.');
     return false;
   }
   // convierte un array y lo invierte
@@ -22,7 +22,7 @@ var isValidCard = function(cardNumber) {
     // 1 porque el indice empieza en 0 y %2 para ver si es par
     if ((i + 1) % 2 === 0) {
       reverseArray[i] = reverseArray[i] * 2;
-      // Si la múltiplicación es >= 10, resta -9 para que obtener la suma de los dos digitos.
+      // Si es >= 10, resta -9 para que obtener la suma de los dos digitos.
       if (reverseArray[i] >= 10) {
         reverseArray[i] = reverseArray[i] - 9;
       }
@@ -43,3 +43,5 @@ var containletters = function(text) {
   }
   return false;
 };
+
+isValidCard(card);
